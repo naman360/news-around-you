@@ -5,7 +5,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 h2 {
@@ -40,6 +40,19 @@ h2 {
   cursor: pointer;
 }
 
+@media (max-width: 460px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
 .wrapper {
   padding: 0 1rem;
 }
@@ -47,8 +60,8 @@ h2 {
 .news {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 2rem;
 }
 
