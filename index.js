@@ -14,5 +14,5 @@ app.set("view engine", "ejs");
 // Routers
 const newsRouter = require("./src/routes/news");
 app.use("/", newsRouter);
-const port = process.env.port || 5010;
+const port = process.env.PORT || 5010;
 app.listen(port, () => console.log(`Listening on port ${port}`));
